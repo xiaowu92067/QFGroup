@@ -33,18 +33,26 @@
 .ship .trade_list{position: relative; z-index: 10; }
 
 .ship_trait{margin-top: 34px; }
-.ship_trait li{float: left; width: 33.333%; box-sizing: border-box; border-left: 1px solid #ececec; }
-.ship_trait li:last-child{border-right: 1px solid #ececec; }
+.ship_trait li,
+.l_station ul li{float: left; width: 33.333%; box-sizing: border-box; border-left: 1px solid #ececec; }
+.ship_trait li:last-child,
+.l_station ul li:last-child{border-right: 1px solid #ececec; }
 .ship_trait li a{display: block; margin: 8px 40px 40px; }
 .ship_trait img{ border: 0; max-width: 100%; vertical-align: top; }
-.ship_trait .title{ font-size: 1.25rem; color: #004b64; margin-top: 25px; }
+.ship_trait .title,
+.l_station .title{ font-size: 1.25rem; color: #004b64; margin-top: 25px; }
 .ship_trait .txt{ color: #999; text-align: left; margin-top: 10px; }
 
 
-
-
-
-
+/* bus-3 */
+.logistics .l_trait{margin-top: 42px; }
+.logistics .l_trait ul li{float: left; width: 33.333%; text-align: center; box-sizing: border-box; padding: 48px 0; }
+.logistics .l_trait .txt{padding: 0 80px; margin-top: 20px; height: 66px; }
+.logistics .l_station{margin-top: 35px; }
+.logistics .l_station ul li{padding: 0 40px; }
+.logistics .l_station .title{margin-top: 0; }
+.logistics .l_station .txt{margin-top: 20px; height: 160px; }
+.logistics .l_station .pic{position: relative; z-index: -1; margin-top: -225px; }
 
 
 

@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+.contact .c_way{margin-top: 80px; }
+.contact .c_way li{float: left; width: 33.333%; box-sizing: border-box; }
+.contact .c_way li+li{border-left: 1px solid #e5e5e5; }
+.contact .c_way li div{text-align: center; color: #333; }
+.contact .c_way .title{font-size: 20px; margin-top: 20px; }
+.contact .c_way .txt{font-size: 16px; margin-top: 10px; }
+
+.contact .pic{margin: 70px auto 60px; }
+.contact .pic img{width: 100%; }
