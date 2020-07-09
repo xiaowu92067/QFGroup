@@ -1,0 +1,61 @@
+@charset "utg-8";
+
+/* 公共部分 */
+.contain .list_1{background-color: #eff5f7; }
+.contain .list_2{background-color: #e8f0f3; }
+.contain .list_3{background-color: #e1eaed; }
+.contain .list_4{background-color: #dae5e8; }
+.trade_list li{float: left; width: 25%; padding: 48px 0; text-align: center; margin-top: 50px; }
+.trade_list .txt{margin-top: 30px; }
+.trade_list .txt .title{ font-size: 18px; color: #333; }
+
+
+/* bus-1 */
+.coal{margin: 0 auto; }
+.coal .coal_list{width: 100%; margin: 48px 0 0; }
+.coal .coal_list li{float: left; width: 14.285%; padding: 36px 0; text-align: center; }
+.coal .coal_list .txt{height: 80px; padding: 0 17px; margin: 32px 0 0; }
+.coal .pic{width: 100%; margin-top: 68px; }
+
+.forms{width: 100%; margin: 50px auto 0; }
+.forms table{width: 100%; border-collapse: collapse; }
+.forms table th{width: 14.285%; height: 50px; font-size: 16px; color: #586a70; background: #eff5f7; border: 1px solid #fff; text-align: center; }
+.forms table th:first-child{background-color: #fff; }
+.forms table td{text-align: center; height: 50px; background: #e8f0f3; border: 1px solid #fff; }
+.forms table tr td:first-child{background-color: #eff5f7; }
+
+
+/* bus-2 */
+.ship{padding-bottom: 25px; }
+.ship .contain{position: relative; }
+.ship .contain .b_title{position: relative; z-index: 10; }
+.ship .ship_list .pic img{margin: -100px auto -170px; }
+.ship .trade_list{position: relative; z-index: 10; }
+
+.ship_trait{margin-top: 34px; }
+.ship_trait li{float: left; width: 33.333%; box-sizing: border-box; border-left: 1px solid #ececec; }
+.ship_trait li:last-child{border-right: 1px solid #ececec; }
+.ship_trait li a{display: block; margin: 8px 40px 40px; }
+.ship_trait img{ border: 0; max-width: 100%; vertical-align: top; }
+.ship_trait .title{ font-size: 1.25rem; color: #004b64; margin-top: 25px; }
+.ship_trait .txt{ color: #999; text-align: left; margin-top: 10px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

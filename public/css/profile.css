@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+/* profile-1 */
+/* 集团介绍 */
+.about{padding: 60px 0; margin: 0 auto; }
+.about .left{float: left; width: 65%; }
+.about .left .b_title{font-size: 31px; color: #004b64; text-align: left !important; }
+.about .left .txt{margin-top: 40px; line-height: 28px; }
+.about .right{float: right; width: 35%; }
+.about .pic{clear: both; margin-top: 20px; }
+
+
+/* profile-2 */
+.history .contain{background: url(../img/profile/History_bg.jpg) 50% 90% no-repeat; }
+
+.history .timeline{background: url(../img/profile/History_line.png) 50% 0 repeat-y; margin: 10px 0 0; padding: 35px 0; }
+.history .timeline ul{list-style: none; position: relative; width: 100%; }
+.history .timeline ul li{width: 100%; position: relative; padding: 10px 0;}
+.history .timeline ul li::before {width: 39px; height: 39px; position: absolute; top: 7px; left: 50%; margin-left: -20px; content: "";  background: url(../img/profile/History_dd1.png) 0 0 no-repeat; }
+.history .timeline ul li:hover::before{background-image: url(../img/profile/History_dd2.png); }
+.history .timeline .y_event{width: 46%; height: 80px; line-height: 80px; border: 1px solid #d0d0d0; position: relative; background: #fff; box-sizing: border-box; }
+.history .timeline .y_event:hover{background-color: #004B64; color: #fff; }
+.history .timeline .y_event:hover::before{content: ""; display: inline-block; width: 10px; height: 21px; position: absolute; top: 68px; background: url(../img/profile/History_b.png) 0 0 no-repeat; }
+.history .y_event span{display: inline-block; vertical-align: top; margin: 0 10px; }
+.history .y_event i{width: 12px; height: 21px; position: absolute; top: 16px; }
+.history .odd .y_event{float: right; }
+.history .odd .y_event::before{left: -1px; }
+.history .odd .y_event i{right: auto; left: -11px; background: url(../img/profile/History_arrow4.png) 0 0 no-repeat; }
+.history .odd .y_event:hover i{background-image: url(../img/profile/History_arrow2.png); }
+.history .even .y_event{float: left; text-align: right; }
+.history .even .y_event::before{right: -1px; }
+.history .even .y_event i{right: -11px; background: url(../img/profile/History_arrow3.png) 0 0 no-repeat; }
+.history .even .y_event:hover i{background-image: url(../img/profile/History_arrow1.png);}
+
+.history .y_event .years{color: #666; font-size: 30px; }
+.history .y_event:hover .years{color: #fff;}
+.history .odd .years{margin-left: 40px; }
+.history .even .years{margin-right: 40px; }
+
+.history .arrow{width: 100%; text-align: center; margin: 25px auto; }
+.history .arrow a{display: inline-block; width: 37px; height: 37px; margin: 0 3px; }
+.history .arrow .arrow_L{background: url(../img/profile/History_arrowL.png) 0 0 no-repeat; }
+.history .arrow .arrow_L:hover{background-image: url(../img/profile/History_arrowL2.png); }
+.history .arrow .arrow_R{background: url(../img/profile/History_arrowR.png) 0 0 no-repeat; }
+.history .arrow .arrow_R:hover{background-image: url(../img/profile/History_arrowR2.png); }
+
+
+
+/* profile-3 */
+.manage .leader_list{overflow: hidden; }
+.manage .leader_list ul{list-style: none; margin-right: -3%; padding-bottom: 10px; }
+.manage .leader_list ul li{float: left; width: 33.3333%; box-sizing: border-box; padding: 46px 3% 0 0; cursor: pointer; }
+.manage .leader_list ul li:hover .txt{background-color: #004B64; }
+.manage .leader_list ul li:hover .txt::after{content: ""; display: block; width: 10px; height: 21px; position: absolute; bottom: -10.5px; right: 0; background: url(../img/profile/History_b.png) 0 0 no-repeat; }
+.manage .leader_list ul li:hover .name,
+.manage .leader_list ul li:hover .duty{color: #fff; }
+.manage .leader_list .txt{height: 48px; padding: 15px 2%; text-align: center; position: relative; }
+.manage .leader_list .name{font-size: 18px; color: #333; display: block; }
+.manage .leader_list .duty{font-size: 14px; color: #999; }
+
+.page{text-align: center; padding: 20px 0; margin: 20px auto 0; }
+.page div a{display: inline-block; color: #666; margin: 0 2px; border:1px solid #e1e1e1; padding: 17px 0; text-align: center; }
+.page div a:hover,
+.page .a_page.active{color: #fff; background-color: #004b64; }
+.page .a_first,.page .a_end{width: 63px; }
+.page .a_page{margin: 0 -2px !important; }
+.page .a_page,.page .a_pref,.page .a_next{width: 38px;}
+
