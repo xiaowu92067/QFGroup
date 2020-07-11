@@ -12,220 +12,94 @@
     <link rel="stylesheet" href="css/header.css">
   </head>
   <body>
-    <div class="container">
-      <div class="navbar navbar-light navbar-expand-md pt-0">
-        <!-- 集团logo -->
-        <a href="#" class="navbar-brand">
-          <img src="./img/header/logo.png">
-        </a>
-        <div class="order-md-1 pt-4">
-          <!-- 右侧语言及搜索 -->
-          <div class=" d-inline-block">
-            <ul class="breadcrumb bg-white mb-0">
-              <li class="breadcrumb-item">
-                <img class="align-bottom" src="./img/header/language.png">
-                <select class="text-muted" name="language" id="language">
-                  <option selected value="en">EN</option>
-                  <option value="cn">中文</option>
-                </select>
-              </li>
-              <li class="breadcrumb-item">
-                <a href="#">
-                  <img src="./img/header/search_btn.png">
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- 折叠导航栏按钮 -->
-          <button data-toggle="collapse" data-target="#show" class="navbar-toggler">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <!-- 中部导航栏 -->
-        <div id="show" class="collapse navbar-collapse ml-sm-1 ml-lg-5">
-          <ul class="navbar-nav">
-            <li class="nav-item px-lg-2 pt-md-5 pb-md-3">
-              <a data-target="#nav_1" data-toggle="collapse" href="#" class="nav-link">走进秦发</a>
-            </li>
-            <li class="nav-item px-lg-2 pt-md-5 pb-md-3">
-              <a data-target="#nav_2" data-toggle="collapse" href="#" class="nav-link">业务领域</a>
-            </li>
-            <li class="nav-item px-lg-2 pt-md-5 pb-md-3">
-              <a data-target="#nav_3" data-toggle="collapse" href="#" class="nav-link">投资者关系</a>
-            </li>
-            <li class="nav-item px-lg-2 pt-md-5 pb-md-3">
-              <a data-target="#nav_4" data-toggle="collapse" href="#" class="nav-link">新闻中心</a>
-            </li>
-            <li class="nav-item px-lg-2 pt-md-5 pb-md-3">
-              <a data-target="#nav_5" data-toggle="collapse" href="#" class="nav-link">企业文化</a>
-            </li>
-            <li class="nav-item px-lg-2 pt-md-5 pb-md-3">
-              <a data-target="#nav_6" data-toggle="collapse" href="#" class="nav-link">联系我们</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- 折叠菜单 -->
-      <div id="nav_group" class="position-relative ">
-        <!-- 走进秦发 -->
-        <ul id="nav_1" data-parent="#nav_group" class="list-unstyled px-3 bg-white collapse">
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                集团概述
-              </span>
-            </a>
+    <div class="header">
+      <!-- 集团logo -->
+      <a class="logo" href="javascript:top.location.href=http://127.0.0.1:8080/index.html">
+        <img src="./img/header/logo.png">
+      </a>
+      <!-- 中部导航栏 -->
+      <div class="header_nav">
+        <ul class="clearfix">
+          <li>
+            <a href="javascript:top.location.href=http://127.0.0.1:8080/profile-1.html">走进秦发</a>
+            <div class="nav_list">
+              <dl>
+                <dd><a href="javascript:top.location.href=http://127.0.0.1:8080/profile-1.html">集团概述</a></dd>
+                <dd><a href="javascript:top.location.href=http://127.0.0.1:8080/profile-2.html">发展历程</a></dd>
+                <dd><a href="javascript:top.location.href=http://127.0.0.1:8080/profile-3.html">管理团队</a></dd>
+                <dd><a href="javascript:top.location.href=http://127.0.0.1:8080/profile-4.html">经营模式</a></dd>
+              </dl>
+            </div>
           </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                发展历程
-              </span>
-            </a>
+          <li>
+            <a href="javascript:top.location.href=http://127.0.0.1:8080/bus-1.html">业务领域</a>
+            <div class="nav_list">
+              <dl>
+                <dd><a href="javascript:top.location.href=http://127.0.0.1:8080/bus-1.html">煤炭业务</a></dd>
+                <dd><a href="javascript:top.location.href=http://127.0.0.1:8080/bus-2.html">航运业务</a></dd>
+                <dd><a href="javascript:top.location.href=http://127.0.0.1:8080/bus-3.html">物流业务</a></dd>
+              </dl>
+            </div>
           </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                管理团队
-              </span>
-            </a>
+          <li>
+            <a href="javascript:void(0)">投资者关系</a>
+            <div class="nav_list">
+              <dl>
+                <dd><a href="javascript:void(0)">秦发财报</a></dd>
+                <dd><a href="javascript:void(0)">公告通函</a></dd>
+                <dd><a href="javascript:void(0)">结构合约</a></dd>
+              </dl>
+            </div>
           </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                经营模式
-              </span>
-            </a>
+          <li>
+            <a href="javascript:void(0)">新闻中心</a>
+            <div class="nav_list">
+              <dl>
+                <dd><a href="javascript:void(0)">秦发资讯</a></dd>
+                <dd><a href="javascript:void(0)">行业资讯</a></dd>
+                <dd><a href="javascript:void(0)">行业分析</a></dd>
+              </dl>
+            </div>
           </li>
-        </ul>
-        <!-- 业务领域 -->
-        <ul id="nav_2" data-parent="#nav_group" class="list-unstyled px-3 bg-white collapse">
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                煤炭业务
-              </span>
-            </a>
+          <li>
+            <a href="javascript:top.location.href=http://127.0.0.1:8080/corporate-1.htm">企业文化</a>
+            <div class="nav_list">
+              <dl>
+                <dd><a href="javascript:top.location.href=http://127.0.0.1:8080/corporate-1.htm">企业愿景</a></dd>
+                <dd><a href="javascript:top.location.href=http://127.0.0.1:8080/corporate-2.htm">核心价值</a></dd>
+                <dd><a href="javascript:top.location.href=http://127.0.0.1:8080/corporate-3.htm">秦发故事</a></dd>
+                <dd><a href="javascript:top.location.href=http://127.0.0.1:8080/corporate-4.htm">人力资源</a></dd>
+                <dd><a href="javascript:top.location.href=http://127.0.0.1:8080/corporate-5.htm">社会责任</a></dd>
+              </dl>
+            </div>
           </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                航运业务
-              </span>
-            </a>
-          </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                物流业务
-              </span>
-            </a>
-          </li>
-        </ul>
-        <!-- 投资者关系 -->
-        <ul id="nav_3" data-parent="#nav_group" class="list-unstyled px-3 bg-white collapse">
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                秦发财报
-              </span>
-            </a>
-          </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                公告通函
-              </span>
-            </a>
-          </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                结构合约
-              </span>
-            </a>
-          </li>
-        </ul>
-        <!-- 新闻中心 -->
-        <ul id="nav_4" data-parent="#nav_group" class="list-unstyled px-3 bg-white collapse">
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                秦发资讯
-              </span>
-            </a>
-          </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                行业资讯
-              </span>
-            </a>
-          </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                行业分析
-              </span>
-            </a>
-          </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                经营模式
-              </span>
-            </a>
-          </li>
-        </ul>
-        <!-- 企业文化 -->
-        <ul id="nav_5" data-parent="#nav_group" class="list-unstyled px-3 bg-white collapse">
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                企业愿景
-              </span>
-            </a>
-          </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                核心价值
-              </span>
-            </a>
-          </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                秦发故事
-              </span>
-            </a>
-          </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                人力资源
-              </span>
-            </a>
-          </li>
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                社会责任
-              </span>
-            </a>
-          </li>
-        </ul>
-        <!-- 联系我们 -->
-        <ul id="nav_6" data-parent="#nav_group" class="list-unstyled px-3 bg-white collapse">
-          <li class="py-2">
-            <a class="text-muted" href="#">&gt;
-              <span class="ml-1">
-                联系地址
-              </span>
-            </a>
+          <li>
+            <a href="javascript:top.location.href=http://127.0.0.1:8080/contact.html">联系我们</a>
+            <div class="nav_list">
+              <dl>
+                <dd><a href="javascript:top.location.href=http://127.0.0.1:8080/contact.html">联系地址</a></dd>
+              </dl>
+            </div>
           </li>
         </ul>
       </div>
+      <!-- 语言栏、搜索框 -->
+      <div class="lang">
+        <div>
+          <span>
+            <img src="./img/header/language.png">
+            <a href="javascript:void(0)">EN</a>
+            <img src="./img/header/add_up.png">
+          </span>
+          <span>中文</span>
+        </div>
+        <div>
+          <img src="./img/header/search_btn.png">
+          <input type="text" placeholder="请输入关键字" style="background: #fff url(./img/header/search_btn.png) no-repeat right;">
+        </div>
+      </div>
+      <!-- 折叠导航栏按钮 -->
+      <div class="mobile_menu"><span></span></div>
     </div>
   </body>
 </html>
