@@ -37,27 +37,27 @@
 .bus_list .txt{ color: #999; text-align: left; }
 
 /* 新闻列表 */
-.news_list{margin: 88px auto 0; }
-.news_list .n_sort{ list-style: none; text-align: center; margin-bottom: 3rem; }
-.news_list .n_sort li{ float: left; box-sizing: border-box; width: 25%; height: 60px; line-height: 60px; background: #ecf1f3; border-left: 1px solid #fff; text-align: center; font-size: 20px; color: #576970; cursor: pointer; }
-.news_list .n_sort li:hover,
-.news_list .n_sort li.active{ background-color: #e54646; color: #fff; }
-.news_list .n_show .row{ display: none; }
-.news_list .n_show .row.active{ display: flex; }
-.news_list .n_show .n_img,
-.news_list .n_show .n_list{ box-sizing: border-box; }
-.news_list .n_show .n_img img{ width: 100%; opacity: 0; }
-.news_list .n_list ul{ list-style: none; margin-left: 20px; }
-.news_list .n_list ul li{ padding: 25px 0; }
-.news_list .n_list ul li:hover{ background-color: #ECF1F3; }
-.news_list .n_list ul li+li{ border-top: 1px solid #ededed; }
-.news_list .n_list .time{ display: inline-block; padding: 0.5rem; padding-right: 3rem; border-right: 1px solid #dee2e6; }
-.news_list .n_list .time p{ font-size: 2.5rem; margin: 0; line-height: 0.6; }
-.news_list .n_list .title{ display: inline-block; text-align: top; margin-left: 0.5rem; color: #576970; }
-.news_list .n_list .title p{ font-size: 18px; }
-.news_list .n_list .news_btn{ display: block; width: 204px; height: 40px; line-height: 40px; color: #fff; margin: 40px auto 0; border-radius: 20px; text-align: center; font-size: 16px; font-family: "宋体"; }
-.news_list .n_list .news_btn:hover,
-.news_list .n_list .news_btn:focus{ background: #004b64; color: #fff; }
+.index_new_list{margin: 88px auto 0; }
+.index_new_list .n_sort{ list-style: none; text-align: center; margin-bottom: 3rem; }
+.index_new_list .n_sort li{ float: left; box-sizing: border-box; width: 25%; height: 60px; line-height: 60px; background: #ecf1f3; border-left: 1px solid #fff; text-align: center; font-size: 20px; color: #576970; cursor: pointer; }
+.index_new_list .n_sort li:hover,
+.index_new_list .n_sort li.active{ background-color: #e54646; color: #fff; }
+.index_new_list .n_show .row{ display: none; }
+.index_new_list .n_show .row.active{ display: flex; }
+.index_new_list .n_show .n_img,
+.index_new_list .n_show .n_list{ box-sizing: border-box; }
+.index_new_list .n_show .n_img img{ width: 100%; opacity: 0; }
+.index_new_list .n_list ul{ list-style: none; margin-left: 20px; }
+.index_new_list .n_list ul li{ padding: 25px 0; }
+.index_new_list .n_list ul li:hover{ background-color: #ECF1F3; }
+.index_new_list .n_list ul li+li{ border-top: 1px solid #ededed; }
+.index_new_list .n_list .time{ display: inline-block; padding: 0.5rem; padding-right: 3rem; border-right: 1px solid #dee2e6; }
+.index_new_list .n_list .time p{ font-size: 2.5rem; margin: 0; line-height: 0.6; }
+.index_new_list .n_list .title{ display: inline-block; text-align: top; margin-left: 0.5rem; color: #576970; }
+.index_new_list .n_list .title p{ font-size: 18px; }
+.index_new_list .n_list .news_btn{ display: block; width: 204px; height: 40px; line-height: 40px; color: #fff; margin: 40px auto 0; border-radius: 20px; text-align: center; font-size: 16px; font-family: "宋体"; }
+.index_new_list .n_list .news_btn:hover,
+.index_new_list .n_list .news_btn:focus{ background: #004b64; color: #fff; }
 
 /*  */
 .h_ent{ width: 100%; background-color: #eff2f3; margin-top: 90px; }
@@ -81,8 +81,8 @@
   .qf_about .stock .bg_qfblue{ padding-right: 3rem; padding-left: 3rem; }
   .qf_about .stock .s_detail span{ font-size: 30px; }
   .bus_list ul li a{ padding-left: 1rem; }
-  .news_list .n_show .n_img{ -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
-  .news_list .n_show .n_list{ -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
+  .index_new_list .n_show .n_img{ -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
+  .index_new_list .n_show .n_list{ -webkit-box-flex: 0; -ms-flex: 0 0 100%; flex: 0 0 100%; max-width: 100%; }
 
 
 
@@ -96,8 +96,8 @@
   .qf_about .stock{ -webkit-box-flex: 0; -ms-flex: 0 0 41.666667%; flex: 0 0 41.666667%; max-width: 41.666667%; }
   .qf_about .stock .s_detail span{ font-size: 45px; }
   .bus_list ul li a{ padding-left: 3rem; }
-  .news_list .n_show .n_img{ -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
-  .news_list .n_show .n_list{ -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
+  .index_new_list .n_show .n_img{ -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
+  .index_new_list .n_show .n_list{ -webkit-box-flex: 0; -ms-flex: 0 0 50%; flex: 0 0 50%; max-width: 50%; }
 
 
 

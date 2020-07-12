@@ -2,7 +2,7 @@
 
 
 /* corporate-1 企业愿景 */
-.vision .txt{width: 560px; padding: 0 128px; text-align: center; margin: 0 auto; color: #004b64; font-size: 20px; position: relative; }
+.vision .txt{width: 560px; padding: 0 128px; text-align: center; margin: 80px auto 0; color: #004b64; font-size: 20px; position: relative; }
 .vision .txt::before,
 .vision .txt::after{content: ""; display: inline-block; width: 96px; height: 187px; position: absolute; top: 38px; }
 .vision .txt::before{background: url(../img/corporate/vision_l.png) 0 0 no-repeat; left: 0; }
@@ -11,10 +11,18 @@
 .vision .pic{margin-top: -110px; position: relative; z-index: -1; }
 
 
+/* corporate-2核心价值 */
+.core_value{padding-bottom: 40px; }
+.core_value .title{ text-align: center; position: relative; font-size: 28px; color: #004b64; margin: 60px auto 50px; }
+.core_value .title::before,
+.core_value .title::after{content: "";display: inline-block; width: 127px; height: 94px; position: absolute; top: -30px; }
+.core_value .title::before{background: url(../img/corporate/core1.png) 0 0 no-repeat; left: 100px; }
+.core_value .title::after{background: url(../img/corporate/core2.png) 0 0 no-repeat; right: 100px; }
 
 
-
-
+/* corporate-3秦发故事 */
+/* corporate-4人力资源*/
+/* corporate-5社会责任 */
 
 
 

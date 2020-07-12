@@ -58,11 +58,4 @@
 .manage .leader_list .name{font-size: 18px; color: #333; display: block; }
 .manage .leader_list .duty{font-size: 14px; color: #999; }
 
-.page{text-align: center; padding: 20px 0; margin: 20px auto 0; }
-.page div a{display: inline-block; color: #666; margin: 0 2px; border:1px solid #e1e1e1; padding: 17px 0; text-align: center; }
-.page div a:hover,
-.page .a_page.active{color: #fff; background-color: #004b64; }
-.page .a_first,.page .a_end{width: 63px; }
-.page .a_page{margin: 0 -2px !important; }
-.page .a_page,.page .a_pref,.page .a_next{width: 38px;}
 
