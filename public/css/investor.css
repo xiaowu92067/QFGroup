@@ -1,2 +1,62 @@
 @charset "utf-8";
 
+/* 公共样式 */
+
+/* investor投资者关系 */
+.investor{margin: 100px auto; }
+.investor .left{float: left; width: 45%; box-sizing: border-box; }
+.investor .title{font-size: 24px; float: left; line-height: 21px; }
+.investor .title::before{content: ""; display: block; width: 14px; height: 23px; background-color: #4c89d6; float: left; margin-right: 16px; }
+.investor .more{height: 21px; line-height: 21px; margin-left: 20px; padding: 0 18px 0 20px; border-left: 1px solid #dbdbdb; font-size: 16px; color: #999; background: url(../img/investor/more.png) 100% 50% no-repeat; display: inline-block; }
+.investor .left .title{color: #4c89d6; }
+.investor .list{list-style: none; background-color: #f6f6f6; margin-top: 20px; padding: 15px 6%; }
+.investor .list li{padding: 8px 0; }
+.investor .list li a{background: url(../img/investor/tip.png) 0 0 no-repeat; padding-left: 25px; color: #333333; font-size: 16px; }
+.investor .list li+li{border-top: 1px solid #e8e8e8; }
+.investor .list li .time{display: block; color: #999; font-size: 14px; padding-left: 25px; }
+.investor .right{float: left; width: 52%; margin-left: 3%; }
+.investor .right .list li{padding: 7px 0; }
+.investor .right .list a{display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.investor .right .list .time{float: right; padding-left: 0; }
+.investor .right .r_top .title{color: #dd5656; }
+.investor .right .r_top .title::before{background-color: #dd5656; }
+.investor .right .r_buttom .title{color: #004b64; }
+.investor .right .r_buttom .title::before{background-color: #004b64; }
+.investor .right .r_buttom{margin-top: 33px; }
+
+
+
+/* investor-1 秦发财报 */
+.reports .i_list .list{background-color: transparent; margin-top: 50px; }
+.reports .i_list .list li{float: left; width: 49%; background-color: #f6f6f6; margin-bottom: 1%; }
+.reports .i_list .list li:nth-child(even){margin-left: 2%; box-sizing: border-box; }
+.reports .i_list .list li a{height: 60px; line-height: 60px; background: url(../img/investor/tip.png) 30px 50% no-repeat; padding: 0 30px 0 50px; color: #333333; font-size: 16px; display: block; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.reports .i_list .list .time{float: right; font-size: 16px; color: #999; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
