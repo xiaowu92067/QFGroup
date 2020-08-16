@@ -1,11 +1,15 @@
+// 引入mysql模块
 const mysql = require("mysql");
+// 创建连接池
 const pool = mysql.createPool({
   host: "127.0.0.1",
-  sort: "8080",
+  sort: "3306",
   user: "root",
   password: "",
-  database: "qinfagroup",
+  database: "qf",
+  charset: 'utf8',
   connectionLimit: "20"
 });
 
+// 导出连接池模块
 module.exports=pool;

@@ -24,48 +24,6 @@ a,a:hover,a:focus{text-decoration: none; color: #666460; }
 .contain{width: 1200px; max-width: 100%; margin: 0 auto; }
 .row{display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-
-/* 头部 */
-.header{width: 1200px; max-width: 96%; height: 90px; margin: 0 auto; position: relative;}
-.header .logo{margin-top: 13px; float: left; }
-.header_nav{width: 65%; float: left; }
-.header_nav ul li{float: left;  width: 16%; text-align: center; position: relative; }
-.header_nav ul li:hover .nav_list{display: block; }
-.header_nav ul li>a{color: #000; padding-top: 48px; height: 42px; display: block; position: relative;}
-.header_nav ul li>a::after {content: ""; width: 100%; height: 2px; position: absolute; top: 0; left: 0; background: #004b64; display: none;}
-.header_nav ul li>a:hover::after{display: block; }
-.header_nav ul li:hover>a{color: #004b64;}
- 
-/* 导航栏 */
-.nav_list{position: absolute; width: 180%; top: 100%; z-index: 99; left: 0; background: rgba(255, 255, 255, 0.9); padding: 25px 0!important; display: none;}
-.nav_list dl{margin: 0;}
-.nav_list dl dd{margin: 0; padding: 0 10%; position: relative;}
-.nav_list dl dd::after{content: ""; position: absolute; top: 50%; left: 0; width: 8px; height: 14px; margin-top: -7px; background: #004b64; display: none;}
-.nav_list dl dd:hover::after{display: block;}
-.nav_list dl dd:first-child a{border-top: none;}
-.nav_list dl dd a{text-align: left; display: block; padding-left: 10%; height: 32px; line-height: 32px; border-top: 1px solid #e9edf0; background: url("../img/index/nav_arrow.png") 0 50% no-repeat; display:block; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
-
-/* 语言栏 */
-.lang{float:right; padding-top: 47px; }
-.lang div:first-child{float: left; font-size: 14px; color: #999; position: relative; }
-.lang div:last-child{float: right; padding: 0 0 0 16px; position: relative; }
-.lang div:last-child input{height: 30px; padding-left: 10px; border-radius: 8px; border: 1px solid #004b64; width: 170px; display: none; position: absolute; top: 43px; left: -145px; z-index: 99; }
-.lang div:hover span:last-child,
-.lang div:hover input{display: block; }
-.lang div span:first-child{position: relative ;display: block; border-right: 1px solid #d5d5d5; padding: 0 20px 0 25px; }
-.lang div span:first-child a{font-size: 14px; color: #999; margin: 0 5px; }
-.lang div span:last-child{position: absolute; z-index: 99; display: none; left: 50%; }
-.lang div span img:last-child{position: absolute; top: 40%}
-
-/* 小屏导航折叠按钮 */
-.mobile_menu{width: 24px; height: 30px; position: relative; cursor: pointer; position: absolute; right: 2%; top: 50%; margin-top: -15px; display: none;}
-.mobile_menu span{position:absolute; width:100%; height:3px; background-color:#004b64; left:0; top:50%; margin-top:-1.5px;transition:all ease-out 0.3s; border-radius: 2px;}
-.mobile_menu span::before,
-.mobile_menu span::after{position:absolute; content:''; left:0; width:100%;height:3px; background-color:#004b64; transition:all ease-out 0.3s; border-radius: 2px;}
-.mobile_menu span::before{top:-7px;}
-.mobile_menu span::after{bottom:-7px;}
-
-
 /* 分页公共部分 */
 
 /* 横幅图片banner */

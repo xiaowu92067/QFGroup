@@ -10,95 +10,7 @@
 </head>
 <body>
   <!-- 头部 -->
-  <div class="header">
-    <!-- 集团logo -->
-    <a class="logo" href="http://127.0.0.1:8080/index.html">
-      <img src="./img/header/logo.png">
-    </a>
-    <!-- 中部导航栏 -->
-    <div class="header_nav">
-      <ul class="clearfix">
-        <li>
-          <a href="http://127.0.0.1:8080/profile-1.html">走进秦发</a>
-          <div class="nav_list">
-            <dl>
-              <dd><a href="http://127.0.0.1:8080/profile-1.html">集团概述</a></dd>
-              <dd><a href="http://127.0.0.1:8080/profile-2.html">发展历程</a></dd>
-              <dd><a href="http://127.0.0.1:8080/profile-3.html">管理团队</a></dd>
-              <dd><a href="http://127.0.0.1:8080/profile-4.html">经营模式</a></dd>
-            </dl>
-          </div>
-        </li>
-        <li>
-          <a href="http://127.0.0.1:8080/bus-1.html">业务领域</a>
-          <div class="nav_list">
-            <dl>
-              <dd><a href="http://127.0.0.1:8080/bus-1.html">煤炭业务</a></dd>
-              <dd><a href="http://127.0.0.1:8080/bus-2.html">航运业务</a></dd>
-              <dd><a href="http://127.0.0.1:8080/bus-3.html">物流业务</a></dd>
-            </dl>
-          </div>
-        </li>
-        <li>
-          <a href="http://127.0.0.1:8080/investor.html">投资者关系</a>
-          <div class="nav_list">
-            <dl>
-              <dd><a href="http://127.0.0.1:8080/investor-1.html">秦发财报</a></dd>
-              <dd><a href="http://127.0.0.1:8080/investor-2.html">公告通函</a></dd>
-              <dd><a href="http://127.0.0.1:8080/investor-3.html">结构合约</a></dd>
-            </dl>
-          </div>
-        </li>
-        <li>
-          <a href="http://127.0.0.1:8080/news-1.html">新闻中心</a>
-          <div class="nav_list">
-            <dl>
-              <dd><a href="http://127.0.0.1:8080/news-1.html">秦发资讯</a></dd>
-              <dd><a href="http://127.0.0.1:8080/news-2.html">行业资讯</a></dd>
-              <dd><a href="http://127.0.0.1:8080/news-3.html">行业分析</a></dd>
-            </dl>
-          </div>
-        </li>
-        <li>
-          <a href="http://127.0.0.1:8080/corporate-1.html">企业文化</a>
-          <div class="nav_list">
-            <dl>
-              <dd><a href="http://127.0.0.1:8080/corporate-1.html">企业愿景</a></dd>
-              <dd><a href="http://127.0.0.1:8080/corporate-2.html">核心价值</a></dd>
-              <dd><a href="http://127.0.0.1:8080/corporate-3.html">秦发故事</a></dd>
-              <dd><a href="http://127.0.0.1:8080/corporate-4.html">人力资源</a></dd>
-              <dd><a href="http://127.0.0.1:8080/corporate-5.html">社会责任</a></dd>
-            </dl>
-          </div>
-        </li>
-        <li>
-          <a href="http://127.0.0.1:8080/contact.html">联系我们</a>
-          <div class="nav_list">
-            <dl>
-              <dd><a href="http://127.0.0.1:8080/contact.html">联系地址</a></dd>
-            </dl>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <!-- 语言栏、搜索框 -->
-    <div class="lang">
-      <div>
-        <span>
-          <img src="./img/header/language.png">
-          <a href="javascript:void(0)">EN</a>
-          <img src="./img/header/add_up.png">
-        </span>
-        <span>中文</span>
-      </div>
-      <div>
-        <img src="./img/header/search_btn.png">
-        <input type="text" placeholder="请输入关键字" style="background: #fff url(./img/header/search_btn.png) no-repeat right;">
-      </div>
-    </div>
-    <!-- 折叠导航栏按钮 -->
-    <div class="mobile_menu"><span></span></div>
-  </div>
+  <div id="header"></div>
   <!-- 内容 -->
   <div class="_content">
     <!-- banner -->
@@ -188,8 +100,12 @@
     </div>
   </div>
   <!-- 底部 -->
-  <footer>
-    <iframe class="footer" scrolling="no" src="./footer.html" frameborder="0"></iframe>
-  </footer>
+  <footer id="footer"></footer>
+  <!-- 引入jQuery -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <!-- 引入头部js文件 -->
+  <script src="js/header.js"></script>
+  <!-- 引入底部js文件 -->
+  <script src="js/footer.js"></script>
 </body>
 </html>

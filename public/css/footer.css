@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* 底部 */
 .footer{ background-image: url(../img/footer/footer_bg.jpg); padding-top: 0.5rem; }
-.footer .contain{ padding: 3rem 0; }
+/* .footer .contain{ padding: 3rem 0; } */
 .footer .contain .row{ justify-content: space-between; }
 
 

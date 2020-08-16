@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+/* 首页contain */
+.contain{margin: 0 auto !important; }
+
 /* 轮播图 */
 .banner { position: relative; }
 .banner>img{ opacity: 0; width: 100%; margin: 0 auto; }
@@ -59,7 +62,7 @@
 .index_new_list .n_list .news_btn:hover,
 .index_new_list .n_list .news_btn:focus{ background: #004b64; color: #fff; }
 
-/*  */
+/* 底部展示 */
 .h_ent{ width: 100%; background-color: #eff2f3; margin-top: 90px; }
 .h_ent .contain{ padding: 20px 0; }
 .h_ent ul{ list-style: none; }
