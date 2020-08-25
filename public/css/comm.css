@@ -20,7 +20,7 @@ a,a:hover,a:focus{text-decoration: none; color: #666460; }
 .clearfix::after{content: ""; display: block; clear: both; }
 /* 秦发蓝--背景 */
 .bg_qfblue{background: #004b64 !important; }
-/* 秦发蓝--字体颜色 */
+
 .contain{width: 1200px; max-width: 100%; margin: 0 auto; }
 .row{display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
