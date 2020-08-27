@@ -20,11 +20,7 @@
       <div class="menu">
         <div class="contain clearfix">
           <div class="breadcrumb">
-            <span
-              ><a href="http://127.0.0.1:8080/index.html">
-                首页
-              </a></span
-            >
+            <span><a href="http://127.0.0.1:8080/index.html"> 首页 </a></span>
             <i></i>
             <span
               ><a href="http://127.0.0.1:8080/investor-1.html">
@@ -32,11 +28,7 @@
               </a></span
             >
             <i></i>
-            <span
-              ><a href="javascript:viod(0)">
-                秦发财报
-              </a></span
-            >
+            <span><a href="javascript:viod(0)"> 秦发财报 </a></span>
           </div>
           <ul class="menu_list">
             <li>
@@ -45,14 +37,10 @@
               </a>
             </li>
             <li>
-              <a href="http://127.0.0.1:8080/investor-2.html">
-                公告通函
-              </a>
+              <a href="http://127.0.0.1:8080/investor-2.html"> 公告通函 </a>
             </li>
             <li>
-              <a href="http://127.0.0.1:8080/investor-3.html">
-                结构合约
-              </a>
+              <a href="http://127.0.0.1:8080/investor-3.html"> 结构合约 </a>
             </li>
           </ul>
         </div>
@@ -86,7 +74,15 @@
     <script src="js/header.js"></script>
     <!-- 引入底部js文件 -->
     <script src="js/footer.js"></script>
-    <!-- 引入investor-1.js文件  -->
-    <script src="js/investor-1.js"></script>
+    <!-- 引入news-page.js文件 -->
+    <script src="js/news-page.js"></script>
+    <!-- 页面数据初始化 -->
+    <script>
+      $(function () {
+        id = 3
+        getNews(id, 1, invertorHtml)
+        getPages(id, invertorHtml)
+      })
+    </script>
   </body>
 </html>

@@ -1,111 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>秦发集团</title>
-  <link rel="stylesheet" href="./css/comm.css">
-  <link rel="stylesheet" href="./css/news.css">
-</head>
-<body>
-  <!-- 头部 -->
-  <div id="header"></div>
-  <!-- 内容 -->
-  <div class="_content">
-    <!-- banner -->
-    <div class="_banner">
-      <img src="./img/corporate/banner_4.jpg">
-    </div>
-    <!-- 面包屑导航 -->
-    <div class="menu">
-      <div class="contain clearfix">
-        <div class="breadcrumb">
-          <span><a href="http://127.0.0.1:8080/index.html">
-            首页
-          </a></span>
-          <i></i>
-          <span><a href="http://127.0.0.1:8080/news-1.html">
-            新闻中心
-          </a></span>
-          <i></i>
-          <span><a href="javascript:void(0)">
-            行业分析
-          </a></span>
-        </div>
-        <ul class="menu_list">
-          <li>
-            <a href="http://127.0.0.1:8080/news-1.html">
-              秦发资讯
-            </a>
-          </li>
-          <li>
-            <a href="http://127.0.0.1:8080/news-2.html">
-              行业资讯
-            </a>
-          </li>
-          <li>
-            <a class="active" href="http://127.0.0.1:8080/news-3.html">
-              行业分析
-            </a>
-          </li>
-        </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>秦发集团</title>
+    <link rel="stylesheet" href="./css/comm.css" />
+    <link rel="stylesheet" href="./css/news.css" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <div id="header"></div>
+    <!-- 内容 -->
+    <div class="_content">
+      <!-- banner -->
+      <div class="_banner">
+        <img src="./img/corporate/banner_4.jpg" />
       </div>
-    </div>
-    <div class="news">
-      <div class="contain">
-        <div class="b_title">
-          <div>行业分析</div>
-        </div>
-        <div class="news_list">
-          <ul>
-            <li class="news_item">
-              <a href="javascript:void(0)">
-                <span class="time">2018-07-24</span>
-                <span class="title">机构：下半年全球煤炭或供不应求</span>
-              </a>
+      <!-- 面包屑导航 -->
+      <div class="menu">
+        <div class="contain clearfix">
+          <div class="breadcrumb">
+            <span><a href="http://127.0.0.1:8080/index.html"> 首页 </a></span>
+            <i></i>
+            <span
+              ><a href="http://127.0.0.1:8080/news-1.html"> 新闻中心 </a></span
+            >
+            <i></i>
+            <span><a href="javascript:void(0)"> 行业分析 </a></span>
+          </div>
+          <ul class="menu_list">
+            <li>
+              <a href="http://127.0.0.1:8080/news-1.html"> 秦发资讯 </a>
             </li>
-            <li class="news_item">
-              <a href="javascript:void(0)">
-                <span class="time">2015-05-05</span>
-                <span class="title">煤炭开采行业:央行连续出手助房市加速回暖,再次强调买入煤炭股</span>
-              </a>
+            <li>
+              <a href="http://127.0.0.1:8080/news-2.html"> 行业资讯 </a>
             </li>
-            <li class="news_item">
-              <a href="javascript:void(0)">
-                <span class="time">2015-05-05</span>
-                <span class="title">分析 | 珠海缔交友好城市 为何最高领导见证？</span>
-              </a>
-            </li>
-            <li class="news_item">
-              <a href="javascript:void(0)">
-                <span class="time">2015-01-03</span>
-                <span class="title">港股迎来内资风口上的"大时代"</span>
+            <li>
+              <a class="active" href="http://127.0.0.1:8080/news-3.html">
+                行业分析
               </a>
             </li>
           </ul>
         </div>
-        <div class="page">
-          <div>
-            <a class="a_first" href="javascript:void(0)">首页</a>
-            <a class="a_pref" href="javascript:void(0)">&lt;</a>
-            <span>
-              <a class="a_page active" href="javascript:void(0)">1</a>
-            </span>
-            <a class="a_next" href="javascript:void(0)">&gt;</a>
-            <a class="a_end" href="javascript:void(0)">末页</a>
+      </div>
+      <div class="news">
+        <div class="contain">
+          <div class="b_title">
+            <div>行业分析</div>
           </div>
-        </div>       
-      </div> 
+          <div class="news_list"></div>
+          <div class="page">
+            <div>
+              <a class="a_first" href="javascript:void(0)">首页</a>
+              <a class="a_pref" href="javascript:void(0)">&lt;</a>
+              <span id="numOfPage"> </span>
+              <a class="a_next" href="javascript:void(0)">&gt;</a>
+              <a class="a_end" href="javascript:void(0)">末页</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
-  <!-- 底部 -->
-  <footer id="footer"></footer>
-  <!-- 引入jQuery -->
-  <script src="js/jquery-1.11.3.min.js"></script>
-  <!-- 引入头部js文件 -->
-  <script src="js/header.js"></script>
-  <!-- 引入底部js文件 -->
-  <script src="js/footer.js"></script>
-</body>
+    <!-- 底部 -->
+    <footer id="footer"></footer>
+    <!-- 引入jQuery -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <!-- 引入头部js文件 -->
+    <script src="js/header.js"></script>
+    <!-- 引入底部js文件 -->
+    <script src="js/footer.js"></script>
+    <!-- 引入news-page.js文件 -->
+    <script src="js/news-page.js"></script>
+    <script>
+      $(function () {
+        id = 6
+        getNews(id, 1, industyHtml)
+        getPages(id, industyHtml)
+      })
+    </script>
+  </body>
 </html>

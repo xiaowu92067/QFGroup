@@ -20,18 +20,26 @@ app.use(bodyParser.urlencoded({
 
 // 1.获取管理团队详情列表路由
 app.get('/teamList', (req, res) => {
-  // 定义查询语句
-  let sql = `SELECT id,tname,duty_name,picture FROM qf_team`;
-  // 连接数据库进行查询
+  let pageSize = 6;
+  let start = (req.query.page - 1) * pageSize;
+  let sql = 'SELECT COUNT(id) AS count FROM qf_team';
+  // 获取管理团队总数据数
   pool.query(sql, (err, result) => {
-    // 如果错误就抛出
-    if (err) throw err;
-    // 将查询结果返回给前端
-    res.send({
-      message: '查询成功',
-      code: 1,
-      result: result
-    });
+    let count = result[0].count;
+    // 定义查询语句
+    sql = `SELECT id,tname,duty_name,picture FROM qf_team ORDER BY id ASC LIMIT ?,?`;
+    // 连接数据库进行查询
+    pool.query(sql, [start, pageSize], (err, results) => {
+      // 如果错误就抛出
+      if (err) throw err;
+      // 将查询结果返回给前端
+      res.send({
+        message: '查询成功',
+        code: 1,
+        count: count,
+        result: results
+      });
+    })
   })
 });
 
@@ -72,8 +80,7 @@ app.get('/indexNewsList', (req, res) => {
 });
 
 // 3.投资者关系新闻获取API
-app.get('/investor', (req, res) => {
-  console.log(req.query)
+app.get('/investorIndex', (req, res) => {
   let news_id = req.query.id;
   let count = parseInt(req.query.count);
   let sql = 'SELECT title,created_time FROM qf_news_reports WHERE news_id=? ORDER BY created_time DESC LIMIT ?';
@@ -101,13 +108,14 @@ app.get('/getPage', (req, res) => {
   })
 })
 
-// 4.投资者关系下秦发财报页列表分页API
-app.get('/reports', (req, res) => {
+// 5.新闻列表分页信息API
+app.get('/newsList', (req, res) => {
   let news_id = req.query.id;
   let pageSize = parseInt(req.query.count);
   let start = (req.query.page - 1) * pageSize;
-  let sql = 'SELECT title,created_time FROM qf_news_reports WHERE news_id = ? ORDER BY created_time DESC LIMIT ?,?';
+  let sql = 'SELECT title,show_img,created_time FROM qf_news_reports WHERE news_id = ? ORDER BY created_time DESC LIMIT ?,?';
   pool.query(sql, [news_id, start, pageSize], (err, result) => {
+    if (err) throw err;
     res.send({
       message: '查询成功',
       code: 1,
